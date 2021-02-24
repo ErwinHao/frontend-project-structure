@@ -1,0 +1,9 @@
+Silahkan untuk menggunakan .env atau tidak.
+
+.env memiliki maksud dan tujuan untuk menyembunyikan data sensitif, yang kemudian akan di inject ke proyek kita ini dan dapat kita akses melalui process.env. Dengan begini, orang lain lebih susah tahu apa aja data sensitif kita, seperti username database, password database, dll.
+
+Silahkan di file .gitignore untuk menuliskan .env untuk tidak mengikutsertakan filenya (Kan kita ga mau data sensitif kita diketahui orang). Loh, tapi kok masih bisa diakses variabel yang ada di .env padahal udah ga ada fileny? Karena .env nya di inject ke dalam proyek kita, makanya ga perlu lagi ada filenya.
+
+Kalau mau pake .env atau nga, terserah, hanya ya resiko nya mungkin orang-orang luar bakal tau data sensitif kita contohnya kita bikin password database kita sama dengan password umum kita.
+
+Untuk keseluruhan struktur folder, mohon untuk jangan diubah, dalam rangka mengecilkan kemungkinan error ketika merge. Kalaupun ingin improvisasi, buatlah subfolder baru dalam folder yang secara default sudah ada.

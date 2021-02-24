@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 50px;
+}
+
+button {
+  background-color: blue;
+  border: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.main-title{
+  color: blue;
+}

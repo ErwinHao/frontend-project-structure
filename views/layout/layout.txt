@@ -1,0 +1,23 @@
+Di folder ini berisikan boilerplate khusus untuk kerangka atau template HTML yang nantinya bisa kita gunakan di file .ejs lainnya (seperti partials).
+
+Jadi kan di boilerplate.ejs ada satu notasi ejs yang kayak gini
+
+  <%- body %>
+
+nah, itu maksudnya bahwa ketika kita menggunakan boilerplate ini di file .ejs lain, kita menyisipkan konten HTML ke <%- body %> itu.
+
+jadi contohnya, 
+
+Ini cara manggil boilerplatenya
+
+<% layout('layout/boilerplate') %> // Karena di app.js aku udah app.set('views') ke folder
+                                      views, maka secara default dia udah kenal folder layout itu dimana
+
+<h1>Hello</h1> // <% layout %> ga ada penutupnya
+
+
+Jadi kita secara ga langsung udah menyisipkan <h1>Hello</h1> ke <%- body %> tersebut.
+
+Mudah bukan?
+
+NOTE: PENGGUNAAN BOILERPLATE INI OPSIONAL. Mungkin masih asing sama konsep ini, tapi kalau misalnya bingung ya gapapa, pake partials aja mungkin sudah mumpuni.

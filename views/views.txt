@@ -1,0 +1,22 @@
+Di folder views ini berisikan subfolder yang isinya adalah komponen terkait masing-masing fitur UI yang dikerjakan.
+
+Struktur subfolder ini diusahakan rapi, karena bakal banyak komponen UI yang masuk.
+
+Jadi contohnya mas Ikhwan bikin Homepage nih,
+
+maka di views ini ada subfolder yang bernama Homepage, dan isinya adalah
+
+  Homepage.ejs
+
+Atau kalau mau mengikuti prinsip atomic design pun boleh, misalnya:
+
+  Homepage.ejs
+  Banner.ejs
+  Peta.ejs
+  Chefs.ejs
+  Testimoni.ejs
+  Footer.ejs
+
+Jadi semua komponen tinggal di include di dalam Homepage.ejs
+
+(Mungkin file css dan js bisa di taruh disini juga, contohnya ga mau pake folder public)

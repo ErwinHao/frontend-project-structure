@@ -1,0 +1,14 @@
+<% layout('layout/boilerplate') %>
+<h1 class="main-title">Welcome</h1>
+<% if(articles){ %>
+<ul class="list-group">
+  <% articles.forEach(article => { %>
+  <li class="list-item">
+    <h2><%= article.title %> </h2>
+    <p><%= article.body %> </p>
+  </li>
+  <% }) %>
+</ul>
+<% } else {%>
+<h2>No articles Found</h2>
+<% } %>

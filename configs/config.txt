@@ -1,0 +1,3 @@
+Di folder config ini berisikan segala macam config yang mungkin bakal dipake contohnya kalau pake library luar.
+
+(kalau di backend, contohnya seperti config passport.js))

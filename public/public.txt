@@ -1,0 +1,15 @@
+Public folder ini berisikan aset statis yang biasanya dapat langsung disajikan ke client, contohnya file CSS, gambar, script JS, dll.
+
+Pada app.js, aku udah set static folder nya secara default akan menunjuk ke folder ini. Contoh lebih jelas akan ada pada "views/partials/head.ejs"
+
+NOTE: INI OPSIONAL. Kalau mungkin lebih prefer satukan semua file berkaitan dalam folder masing-masing
+
+contohnya di views/home
+
+maka akan ada:
+
+home.ejs
+homeScript.js
+home.css
+
+Ini juga ga masalah, yang penting nyaman aja, hehehe

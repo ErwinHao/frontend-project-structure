@@ -1,0 +1,11 @@
+Pada folder helpers dapat berisikan macam-macam function yang bakal sering di pakai berulang-ulang.
+
+Contohnya mungkin ketika membuat sebuah error, kita ga mau capek-capek tulis ulang lagi,   contohnya:
+
+  const error = new Error('blablabla');
+  error.statusCode = 400;
+  throw error;
+
+yaudah, di helpers tinggal buat satu file bernama errorHelper.js (terserah), isinya ya code di atas. Kita tinggal require dari file ini dan tinggal panggil functionnya.
+
+NOTE: HELPERS INI OPSIONAL. Ga mau pake juga gapapa, mungkin lebih prefer define functionnya di file controllernya atau gimana

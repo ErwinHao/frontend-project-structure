@@ -1,0 +1,3 @@
+Folder ini berisikan routing untuk masuk ke endpoint masing-masing controller.
+
+Tidak ada bedanya sama routes di backend.

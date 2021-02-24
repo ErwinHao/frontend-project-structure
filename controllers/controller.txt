@@ -1,0 +1,8 @@
+Di folder controller, berisikan file-file controller untuk masing-masing routes
+
+Contohnya ada route '/home', maka buatlah file homeController.js
+
+Isi homeController dapat berupa: 
+1. Authorization logic (apakah user adalah murid/guru/admin, kalau merupakan page public maka tidak usah dibuat authorization),
+2. Error handling (apabila terjadi error untuk mengakses rute ini, maka buat error baru), 3. Data fetching (terserah mau pakai axios atau fetch, tidak tabrakan kok sama yang lain),
+4. Redirect ke rute tertentu atau render view

@@ -1,0 +1,1 @@
+Di folder partials ini berisikan komponen-komponen yang bakal sering muncul, seperti navbar, footer, dan lain semacamnya. Tinggal di include saja.

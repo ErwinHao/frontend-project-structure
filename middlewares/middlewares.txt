@@ -1,0 +1,7 @@
+Folder middlewares ini berisikan penengah yang bakal jadi perantara antar request client dan server.
+
+Contohnya kita mau validasi sebuah data kiriman dari client dulu nih sebelum di proses ke server, nah, kita bisa aja taruh dataValidator di tengah router
+
+  router.post('/', dataValidator, iniController.postSesuatu);
+
+Middlewares mungkin bakal jarang digunakan di frontend, namun akan ada kasus dimana frontend juga membutuhkan middleware, jadi bagian ini OPSIONAL.
