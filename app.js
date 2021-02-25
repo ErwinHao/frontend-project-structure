@@ -9,6 +9,7 @@ require('dotenv').config(); // Selalu pergunakan enviromental variable (env) unt
 
 const homeRoutes = require('./routes/homeRoutes');
 const authRoutes = require('./routes/authRoutes');
+const articleRoutes = require('./routes/articleRoutes');
 const { errorHandler } = require('./middlewares/errorHandler')
 
 const { PORT, SESSION_SECRET } = process.env
@@ -30,6 +31,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use('/auth', authRoutes);
 app.use('/home', homeRoutes);
+app.use('/articles', articleRoutes);
 
 app.use(errorHandler); // Middleware ini khusus handling semua error yang di pass lewat next();
 

@@ -1,0 +1,7 @@
+<% layout('layout/boilerplate') %>
+<% if(article) {%>
+<h2><%= article.title %></h2>
+<p><%= article.body %> </p>
+<p>Made by: <%= article.User.username %> </p>
+
+<% } %>

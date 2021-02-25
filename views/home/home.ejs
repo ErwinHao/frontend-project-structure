@@ -6,6 +6,10 @@
   <li class="list-item">
     <h2><%= article.title %> </h2>
     <p><%= article.body %> </p>
+    <form action="/articles/article-detail" method="GET">
+      <input type="hidden" name='id' value=<%= article.id %>>
+      <button type='submit'>View Detail</button>
+    </form>
   </li>
   <% }) %>
 </ul>
